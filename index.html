@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <style>
+      .first__row,
+      .second__row,
+      .third__row {
+        margin-top: 5rem;
+      }
+    </style>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">The Surfing Project</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Le programme</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link active dropdown-toggle"
+                  href="#"
+                  id="navbarScrollingDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Nos prochaines sessions
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Session de Juillet 2023</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Session de Aout 2023</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container-fluid">
+      <div
+        class="row justify-content-center align-items-center"
+        style="
+          background: url(./src/surf_cover.jpg);
+          background-size: cover;
+          min-width: 60vw;
+          aspect-ratio: 16/9;
+        "
+      >
+        <div class="header__text text-white text-center">
+          <h1 class="">Partez à l'aventure</h1>
+          <p class="">Découvrez notre école de surf en peer-learning</p>
+          <div class="button__container">
+            <button class="btn btn-primary m-2">
+              Je m'inscris à la prochaine session
+            </button>
+            <button class="btn btn-light m-2">
+              Je découvre le programme
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="first__row row justify-content-center align-items-center">
+        <h1 class="text-center display-4 fw-normal mt-5 mb-2">
+          The Surfing Project en 3 points
+        </h1>
+        <div class="points row mt-5 justify-content-center">
+          <div class="first__point col-md-6 col-xl-3 text-center mb-5 mx-4">
+            <i class="fas fa-money-bill-wave-alt fa-8x"></i>
+            <h2 class="my-3">Pas chère</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+              nulla suscipit ex eius dolores eveniet ratione iusto assumenda
+              enim soluta quis, saepe quia.
+            </p>
+          </div>
+          <div class="second__point col-md-6 col-xl-3 text-center mb-5 mx-4">
+            <i class="fas fa-couch fa-8x"></i>
+            <img class="icone" />
+            <h2 class="my-3">Relax</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+              nulla suscipit ex eius dolores eveniet.
+            </p>
+          </div>
+          <div class="third__point col-md-6 col-xl-3 text-center mb-5 mx-4">
+            <i class="fas fa-users fa-8x"></i>
+            <img class="icone" />
+            <h2 class="my-3">La communauté</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque
+              nulla suscipit ex eius dolores eveniet ratione iusto assumenda
+              enim soluta quis, saepe quia ipsam est alias vel.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="second__row row justify-content-center mx-4">
+        <h1 class="text-center display-4 fw-normal mt-5 mb-4">Témoignages</h1>
+        <div
+          class="m-2 p-0 first__card__testimony card col-6"
+          style="width: 30rem"
+        >
+          <img src="./src/testimony.jpg" class="card-img-top" alt="..." />
+          <p class="card-text m-2">
+            Surfing's not a sport. It's a way of life, it's no lobby. It's a way
+            of looking at that wave and saying, "Hey bud, let's party !"
+          </p>
+          <div class="date text-left m-2">Jeff, Avril 2019</div>
+        </div>
+        <div
+          class="m-2 p-0 second__card__testimony card col-6"
+          style="width: 30rem"
+        >
+          <img src="./src/van.jpg" class="card-img-top" alt="..." />
+          <p class="card-text m-2">
+            Grâce à TSP, je fais le tour du monde avec mon van et je fais du
+            surf ! Si l'expérience était à refaire, je la referais plein de
+            fois.
+          </p>
+          <div class="date text-left m-2">Jean-Michel, Octobre 2018</div>
+        </div>
+      </div>
+      <div
+        class="third__row row justify-content-center align-items-center mb-5 mx-2"
+      >
+        <h1 class="text-center display-4 fw-normal mt-5 mb-4">Prix</h1>
+        <div
+          class="m-2 p-0 text-center first__card__price card col-xs-10 col-sm-8 col-md-4 col-lg-3"
+        >
+          <h3 class="card-header">Semaine d'essai</h3>
+          <div class="card-body">
+            <h1>0€</h1>
+            <p>Le kiff</p>
+            <p>A Bali</p>
+            <p>Pendant 1 semaine</p>
+            <button class="sub__button btn btn-secondary col-6">
+              S'inscrire
+            </button>
+          </div>
+        </div>
+        <div
+          class="m-2 p-0 text-center first__card__price card col-xs-10 col-sm-8 col-md-4 col-lg-3"
+        >
+          <h3 class="card-header">Early Bird</h3>
+          <div class="card-body">
+            <h1>15€</h1>
+            <p>Le kiff</p>
+            <p>A Bali</p>
+            <p>Pendant 12 semaine</p>
+            <button class="sub__button btn btn-primary col-6">
+              S'inscrire
+            </button>
+          </div>
+        </div>
+        <div
+          class="m-2 p-0 text-center first__card__price card col-xs-10 col-sm-8 col-md-4 col-lg-3"
+        >
+          <h3 class="card-header">En trois fois</h3>
+          <div class="card-body">
+            <h1>7€ / mo</h1>
+            <p>Le kiff</p>
+            <p>A Bali</p>
+            <p>Pendant 12 semaine</p>
+            <button class="sub__button btn btn-primary col-6">
+              S'inscrire
+            </button>
+          </div>
+        </div>
+      </div>
+      <footer class="mt-5">
+        <h6 class="trademark">© Bootstrap and THP</h6>
+      </footer>
+    </div>
+
+    <script src="./bootstrap.min.js"></script>
+  </body>
+</html>

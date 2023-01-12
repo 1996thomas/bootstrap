@@ -1,0 +1,52 @@
+<nav
+        class="navbar navbar-collapse navbar-expand-lg navbar-light bg-light container-fluid"
+      >
+        <div class="logo m-2">The Surfing Project</div>
+        <div class="navbar navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+          <a href="#" class="nav-link active">Accueil</a>
+          <a href="#" class="nav-link active">Le programme</a>
+          <li class="nav-item dropdown" style="list-style-type: none">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              role="button"
+              data-bs-toggle="dropdown"
+              >Nos prochaines sessions</a
+            >
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="#">Session de Juillet 2023</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Session de Aout 2023</a>
+              </li>
+            </ul>
+          </li>
+        </div>
+      </nav>
+
+
+      <div class="container-fluid">
+        <div
+          class="row justify-content-center align-items-center"
+          style="
+            background: url(./src/surf_cover.jpg);
+            background-size: cover;
+            aspect-ratio: 16/9;
+          "
+        >
+          <div class="header__text text-white container">
+            <h1 class="text-center">Partez à l'aventure</h1>
+            <p class="text-center">
+              Découvrez notre école de surf en peer-learning
+            </p>
+            <div class="button__container row text-center">
+              <button class="btn btn-primary">
+                Je m'inscris à la prochaine session
+              </button>
+              <button class="btn btn-light">Je découvre le programme</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
